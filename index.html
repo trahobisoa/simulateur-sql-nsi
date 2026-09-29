@@ -696,13 +696,6 @@
                                     <div className="flex items-center gap-3">
                                         <span className="text-xs text-slate-400 hidden sm:inline-block">Ctrl + Entrée pour exécuter</span>
                                         <button 
-                                            onClick={() => askGemini('hint')}
-                                            className="bg-purple-600 hover:bg-purple-700 text-white px-3 py-1.5 rounded-md text-sm font-medium flex items-center gap-2 transition-colors shadow-sm"
-                                            title="Demander un indice à l'IA"
-                                        >
-                                            <i className="fas fa-robot text-xs"></i> Indice IA
-                                        </button>
-                                        <button 
                                             onClick={() => {
                                                 setQuery(DATABASES[activeDbKey].questions[currentQuestionIndex].solution);
                                                 setValidationStatus(null);
